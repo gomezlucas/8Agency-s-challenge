@@ -3,5 +3,5 @@ export default function showInvalidEmail() {
   $emailInput.classList.add('is-invalid');
   setTimeout(() => {
     $emailInput.classList.remove('is-invalid');
-  }, 400);
+  }, 3000);
 }
