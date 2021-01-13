@@ -23,7 +23,6 @@ export function loadSubscriptorsFromDB() {
     .then((res) => {
       if (localStorage.getItem(key)) {
         localStorage.removeItem(key);
-        console.log(res, 'the res is');
         localStorage.setItem(key, JSON.stringify(res));
       } else {
         localStorage.setItem(key, JSON.stringify(res));

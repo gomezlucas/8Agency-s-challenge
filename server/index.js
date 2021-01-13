@@ -33,8 +33,7 @@ app.post('/', async (req, res) => {
 
 
 app.get('/subscriptors/', async (req,res)=>{
-  console.log('entro')
-  let subscriptors = await Subscriptor.find({}, {_id:0, created_at:0, __v:0})
+   let subscriptors = await Subscriptor.find({}, {_id:0, created_at:0, __v:0})
   res.send(subscriptors)
 })
 
