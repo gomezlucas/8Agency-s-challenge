@@ -1,20 +1,18 @@
 export const swiperConfig = {
   direction: 'horizontal',
-  watchSlidesProgress: true,
-  watchSlidesVisibility: true,
-  slidesPerView: 5,
+    slidesPerView: 5,
   breakpoints: {
     100: {
       slidesPerView: 3,
-      spaceBetween: 0,
+      spaceBetween: 20,
     },
     400: {
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: 25,
     },
     500: {
       slidesPerView: 5,
-      spaceBetween: 0,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 5,
