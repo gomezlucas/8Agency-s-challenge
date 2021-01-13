@@ -39,9 +39,11 @@ and the server will be ready and running.
 
 7-  In the localStorageSubscriptor.js, getDataFromUser.js and app2.js you have to swap the Url of my Server to the one you have already declared. 
 
-8- Finally to run the web aplicaciont from the front end side I installed live-server, very easy to use and efficient you just need to type in the command line
+8-
+
+9- Finally to run the web aplicaciont from the front end side I installed live-server, very easy to use and efficient you just need to type in the command line
   ```
 live-server
    ```
 
-9- Web app running! 
+10- Web app running! 
