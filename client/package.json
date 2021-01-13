@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "countries-list": "^2.6.0",
+    "live-server": "^1.2.1",
     "sweetalert2": "^10.13.0",
     "swiper": "^6.4.5"
   }
