@@ -13,7 +13,7 @@ export function saveSubscriptorDatainLS(newSubscriptor) {
 export function loadSubscriptorsFromDB() {
   const key = 'subscriptors';
 
-  fetch('http://localhost:3001/subscriptors', {
+  fetch('https://telecomevento-back.herokuapp.com/subscriptors', {
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
@@ -32,7 +32,7 @@ export function loadSubscriptorsFromDB() {
     .catch((error) => console.log('Problem with the server', error));
 }
 
-/* Check if the email exist in LocalStorage. Currentrly checking from in the Back */
+/* Check if the email exist in LocalStorage. Currently checking from in the Back */
 export function emailExists(email) {
   const key = 'subscriptors';
   const arraySubcriptors = JSON.parse(localStorage.getItem(key));

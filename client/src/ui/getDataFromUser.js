@@ -19,7 +19,7 @@ function addFormEvent() {
       name, lastName, country, email, telephone, job,
     };
 
-    fetch('http://localhost:3001/', {
+    fetch('https://telecomevento-back.herokuapp.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

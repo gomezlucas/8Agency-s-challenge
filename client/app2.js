@@ -17,7 +17,7 @@ function loadTable(subscriptors) {
 }
 
 function intializeSubcriptorPage() {
-  fetch('http://localhost:3001/subscriptors', {
+  fetch('https://telecomevento-back.herokuapp.com/subscriptors', {
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
