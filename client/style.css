@@ -1,3 +1,23 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url("./fonts/proximanova-regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: SharpSansNo1;
+  src: url("./fonts/SharpSansNo1Medium-Regular.woff2");
+}
+@font-face {
+  font-family: SharpSansNo1;
+  font-weight: bold;
+  src: url("./fonts/SharpSansNo1-Bold.woff2");
+}
+@font-face {
+  font-family: SharpSansNo1;
+  font-weight: semibold;
+  src: url("./fonts/SharpSansNo1Medium-Regular.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,14 +47,25 @@ header {
 
 header h1,
 header h2 {
-  font-weight: bold;
   font-size: 2.5rem;
+}
+
+header h1 {
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-weight: bold;
+}
+
+header h2 {
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-style: italic;
+  font-weight: bold;
 }
 
 header p {
   font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-weight: semibold;
 }
 
 .header__tag {
@@ -61,6 +92,13 @@ header p {
 /* Main */
 #main {
   margin-top: 4.5rem;
+  font-family: ProximaNova, "Courier New", Roboto, "Helvetica Neue";
+}
+
+@media screen and (max-width: 650px) {
+  #main {
+    margin-top: 1rem;
+  }
 }
 
 /* Info  */
@@ -85,6 +123,7 @@ header p {
 
 .main__text {
   color: var(--text);
+  width: 90%;
 }
 
 .main__speakers img {
@@ -99,16 +138,31 @@ header p {
   color: var(--title);
 }
 
+.main__speakers .card-title {
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-weight: bold;
+}
+
+.main__speakers .card-text {
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+}
+
 .main__speakers .card {
   border: none;
 }
 
-
+@media screen and (max-width: 900px) {
+  .main__text {
+    width: 100%;
+  }
+}
 
 /* Form */
 
 form {
   background-color: var(--secondaryBackground);
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-weight: semibold;
 }
 
 form h3 {
@@ -130,6 +184,8 @@ label {
   background-color: var(--title);
   color: #ffffff;
   font-size: 1.18rem;
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+  font-weight: semibold;
 }
 
 .btn-submit:hover {
@@ -142,6 +198,7 @@ label {
 footer {
   background-color: var(--secondaryBackground);
   color: var(--text);
+  font-family: ProximaNova, "Courier New", Roboto, "Helvetica Neue";
 }
 
 .footer__icons a {
