@@ -17,6 +17,9 @@ function loadTable(subscriptors) {
 }
 
 function intializeSubcriptorPage() {
+  const $tableContainer = document.querySelector('.table-responsive');
+  const $loading = document.querySelector('.loading');
+
   fetch('https://telecomevento-back.herokuapp.com/subscriptors', {
     headers: {
       'Content-Type': 'application/json',
@@ -24,7 +27,11 @@ function intializeSubcriptorPage() {
     },
   })
     .then((res) => res.json())
-    .then((res) => loadTable(res))
+    .then((res) => {
+      $tableContainer.classList.remove('invisible')
+      $loading.classList.add('d-none')
+      loadTable(res);
+    })
     .catch((error) => console.log('Problem with the server', error));
 }
 

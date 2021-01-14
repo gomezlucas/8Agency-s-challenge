@@ -50,10 +50,14 @@ header h2 {
   font-size: 2.5rem;
 }
 
-header h1 {
+  h1 {
   font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
   font-weight: bold;
 }
+
+.subscriptor h2{
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+ }
 
 header h2 {
   font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
@@ -221,4 +225,12 @@ footer {
 
 footer .row {
   border-bottom: 1px solid var(--icon);
+}
+
+
+/* Subscriptor */
+
+table{
+  font-family: SharpSansNo1, "Courier New", Roboto, "Helvetica Neue";
+
 }
