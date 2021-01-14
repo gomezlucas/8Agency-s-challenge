@@ -1,0 +1,29 @@
+{
+  "name": "eventovirtual-fr",
+  "version": "1.0.0",
+  "description": "Challenge for The 8Agency - Test Front End",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomezlucas/8Agency-s-challenge.git"
+  },
+  "author": "Lucas D Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomezlucas/8Agency-s-challenge/issues"
+  },
+  "homepage": "https://github.com/gomezlucas/8Agency-s-challenge#readme",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "dependencies": {
+    "countries-list": "^2.6.0",
+    "live-server": "^1.2.1"
+   }
+}

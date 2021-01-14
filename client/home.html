@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Swiper CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+    <!-- SweetAlert CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.css">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Bootstrap CDN -->
+    <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
     <!-- User Styles  -->
     <link rel="stylesheet" href="style.css">
 
@@ -22,7 +22,7 @@
 
 <body>
     <!-- Header -->
-    <header class="pb-5">
+    <header class="pb-5 ">
         <div class="container">
             <p class="header__tag mb-4 ">Webinar</p>
             <h1 class="mb-2"> El reto de humanizar el CX financiero en 2021. </h1>
@@ -87,11 +87,11 @@
 
                 <div class="main__speakers mb-5">
                     <div class="card mb-3 " style="max-width: 540px;">
-                        <div class="row  align-items-center">
-                            <div class="col-2 ">
+                        <div class="row  align-items-center  text-center text-sm-start">
+                            <div class="col-12 col-sm-2">
                                 <img src="images/img-rodriguez.png" class="card-img " alt="speaker image">
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Jose Perez</h5>
                                     <p class="card-text"> Presidente</p>
@@ -100,12 +100,12 @@
                         </div>
                     </div>
                     <div class="card mb-3 " style="max-width: 540px;">
-                        <div class="row  align-items-center">
-                            <div class="col-2 ">
+                        <div class="row  align-items-center text-center text-sm-start">
+                            <div class=" col-12 col-sm-2  ">
                                 <img src="images/img-rodriguez.png" class="card-img " alt="speaker image">
                             </div>
-                            <div class="col-8">
-                                <div class="card-body">
+                            <div class=" col-12 col-sm-8 ">
+                                <div class="card-body ">
                                     <h5 class="card-title">Jose Perez</h5>
                                     <p class="card-text"> Customer Service Senior Manager</p>
                                 </div>
@@ -113,11 +113,11 @@
                         </div>
                     </div>
                     <div class="card mb-3 " style="max-width: 540px;">
-                        <div class="row  align-items-center">
-                            <div class="col-2 ">
+                        <div class="row  align-items-center  text-center text-sm-start">
+                            <div class="col-12 col-sm-2 ">
                                 <img src="images/img-rodriguez.png" class="card-img " alt="speaker image">
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Jose Perez</h5>
                                     <p class="card-text"> Senior Customer Success Consultant</p>
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                     <div class="card mb-3 " style="max-width: 540px;">
-                        <div class="row  align-items-center">
-                            <div class="col-2 ">
+                        <div class="row  align-items-center  text-center text-sm-start">
+                            <div class="col-12 col-sm-2">
                                 <img src="images/img-rodriguez.png" class="card-img " alt="speaker image">
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Jose Perez</h5>
                                     <p class="card-text"> Gerente de Consultoría de Soluciones</p>
@@ -158,34 +158,40 @@
 
             <!-- Form  -->
             <div class="col-12 col-lg-5 ">
-                <form class="row g-3 px-3 py-4">
+                <form class="row g-3 px-3 py-4" id="registrationForm">
                     <h3 class="text-center mb-4">¡Inscríbete y reserva tu lugar ahora! </h3>
                     <div class="col-12">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control form-control-lg" id="name">
+                        <input type="text" class="form-control form-control-lg" id="name" name="name" required
+                            minlength='3'>
                     </div>
                     <div class="col-12">
                         <label for="lastName" class="form-label">Apellido</label>
-                        <input type="text" class="form-control form-control-lg" id="lastName">
+                        <input type="text" class="form-control form-control-lg" id="lastName" name="lastName" required
+                            minlength="3">
                     </div>
                     <div class="col-md-12">
                         <label for="email" class="form-label">Correo Electrónico del trabajo</label>
-                        <input type="text" class="form-control form-control-lg" id="email">
+                        <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            El email ya se encuentra registrado para el evento.
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <label for="country" class="form-label ">País</label>
-                        <select id="country" class="form-select form-select-lg">
+                        <select id="country" class="form-select form-select-lg" name="country">
                             <option selected> Argentina</option>
-                            <option>...</option>
                         </select>
                     </div>
                     <div class="col-md-12">
                         <label for="telephone" class="form-label">Número de teléfono</label>
-                        <input type="text" class="form-control form-control-lg" id="telephone">
+                        <input type="number" class="form-control form-control-lg" id="telephone" name="telephone"
+                            required>
                     </div>
                     <div class="col-md-12">
                         <label for="job" class="form-label"> Puesto de trabajo</label>
-                        <input type="text" class="form-control form-control-lg" id="job">
+                        <input type="text" class="form-control form-control-lg" id="job" name=job required
+                            minlength='3'>
                     </div>
 
                     <div class="d-grid my-4">
@@ -205,9 +211,8 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper brandList ">
                         <!-- Slides -->
-                        <div class="swiper-slide ">
+                        <div class="swiper-slide">
                             <img src="./images/brands/cluster.png" alt="">
-
                         </div>
                         <div class="swiper-slide">
                             <img src="./images/brands/asobanca.png" alt="">
@@ -225,7 +230,7 @@
                             <img src="./images/brands/ebanx.png" alt="">
 
                         </div>
-                        <div class="swiper-slide">
+                       <div class="swiper-slide">
                             <img src="./images/brands/zendesk.png" alt="">
                         </div>
                     </div>
@@ -261,11 +266,8 @@
 
     <!-- Main -->
 
-    <!-- Swiper CDN -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Custon JS -->
-    <script src="./app.js"></script>
+    <!-- Custom JS -->
+    <script src="./app.js" type="module"></script>
 </body>
 
 </html>
