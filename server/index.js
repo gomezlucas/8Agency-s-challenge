@@ -38,7 +38,7 @@ app.get('/subscriptors/', async (req,res)=>{
 })
 
 
-mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vtrhi.mongodb.net/eventovirtual`,
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.slvcx1w.mongodb.net/?retryWrites=true&w=majority`,
 { useNewUrlParser: true,
   useUnifiedTopology: true },(err)=>{
 if(err) throw err;
