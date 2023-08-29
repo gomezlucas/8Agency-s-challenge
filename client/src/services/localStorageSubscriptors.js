@@ -13,7 +13,7 @@ export function saveSubscriptorDatainLS(newSubscriptor) {
 export function loadSubscriptorsFromDB() {
   const key = 'subscriptors';
 
-  fetch('https://telecomevento-back.herokuapp.com/subscriptors', {
+  fetch('https://high-telecom.onrender.com/subscriptors', {
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
