@@ -4,11 +4,11 @@
  
  [![Javascript](https://img.shields.io/badge/-Javascript-yellow.svg)](https://www.javascript.com/) [![NodeJs](https://img.shields.io/badge/-NodeJS-brightgreen.svg)](https://www.nodejs.org/) [![NodeJs](https://img.shields.io/badge/-MongoDB-green.svg)](https://www.python.org/)
 
-Live Version: https://telecomevento.herokuapp.com/
+Live Version: https://high-telecom-evento.netlify.app/
 
 
 The site allows to the user to subcribe to a Webinar.
-The form provided in the web asks for certain information where the User Email is unique. The Front End of the App is built with HTML/CSS/Javascript while the BackEnd is built with NodeJs (express Framework) and MongoDB as a Database(Mongoose Framework). Once the user is registered, his info is saved in the Database and in the LocalStorage with the rest of the attendees.  Also if you access to the Route https://telecomevento.herokuapp.com/subscriptor.html you will find a table with all the subscriptors to the Event. 
+The form provided in the web asks for certain information where the User Email is unique. The Front End of the App is built with HTML/CSS/Javascript while the BackEnd is built with NodeJs (express Framework) and MongoDB as a Database(Mongoose Framework). Once the user is registered, his info is saved in the Database and in the LocalStorage with the rest of the attendees.  Also if you access to the Route https://high-telecom-evento.netlify.app/subscriptor.html you will find a table with all the subscriptors to the Event. 
 
 
 ## Screens
