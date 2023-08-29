@@ -19,7 +19,7 @@ function addFormEvent() {
       name, lastName, country, email, telephone, job,
     };
 
-    fetch('https://telecomevento-back.herokuapp.com/', {
+    fetch('https://high-telecom.onrender.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

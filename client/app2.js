@@ -20,7 +20,7 @@ function intializeSubcriptorPage() {
   const $tableContainer = document.querySelector('.table-responsive');
   const $loading = document.querySelector('.loading');
 
-  fetch('https://telecomevento-back.herokuapp.com/subscriptors', {
+  fetch('https://high-telecom.onrender.com/subscriptors', {
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
